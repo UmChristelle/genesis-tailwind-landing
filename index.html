@@ -1,407 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Genesis Inspired SaaS Landing</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Genesis - AI Agents</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
-<body class="relative text-gray-100">
 
-  <div class="absolute inset-0 -z-10">
-    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80" 
-         class="w-full h-full object-cover" alt="Background Image">
-    <div class="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-black opacity-90"></div>
+<body class="bg-gradient-to-br from-purple-900 via-gray-900 to-orange-900 text-white font-sans">
+
+<nav class="sticky top-0 z-50 bg-black/40 backdrop-blur border-b border-white/10">
+  <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+    <div class="flex items-center gap-3">
+      <div class="bg-orange-500 rounded-full w-10 h-10 flex items-center justify-center">
+        <span class="text-white font-bold text-xl">g</span>
+      </div>
+      <span class="text-white font-bold text-2xl">Genesis</span>
+    </div>
+    <ul class="hidden md:flex gap-6 text-sm">
+      <li class="hover:text-orange-400 cursor-pointer">Home</li>
+      <li class="hover:text-orange-400 cursor-pointer">Agents</li>
+      <li class="hover:text-orange-400 cursor-pointer">Use Cases</li>
+      <li class="hover:text-orange-400 cursor-pointer">Pricing</li>
+      <li class="hover:text-orange-400 cursor-pointer">Docs</li>
+    </ul>
+    <button class="bg-orange-500 hover:bg-orange-600 transition px-4 py-2 rounded-lg">Sign Up</button>
   </div>
+</nav>
 
-  <header class="py-5 bg-black bg-opacity-40 backdrop-blur-md sticky top-0 z-30 border-b border-gray-700">
-    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
-      <div class="flex items-center gap-2">
-        <div class="w-10 h-10 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-lg flex items-center justify-center shadow-lg">
-          <i class="fas fa-bolt text-white text-xl"></i>
-        </div>
-        <h1 class="text-2xl font-extrabold text-white">Genesis</h1>
-      </div>
-      <nav class="hidden md:flex space-x-6 text-white font-medium">
-        <a href="#hero" class="hover:text-cyan-400 transition-colors duration-200">Home</a>
-        <a href="#features" class="hover:text-cyan-400 transition-colors duration-200">Features</a>
-        <a href="#footer" class="hover:text-cyan-400 transition-colors duration-200">Contact</a>
-      </nav>
-      <button class="md:hidden text-white">
-        <i class="fas fa-bars text-2xl"></i>
-      </button>
+<section class="text-center py-20 px-6">
+  <h1 class="text-4xl md:text-5xl font-bold mb-4">Smart, Fast, Always Active</h1>
+  <p class="max-w-xl mx-auto mb-6 text-white/80">Build, Deploy & Talk to AI Agents in Seconds. Design AI assistants that research, plan, and execute tasks — all powered by your prompts.</p>
+  <div class="flex flex-col sm:flex-row justify-center gap-4">
+    <button class="bg-orange-500 hover:bg-orange-600 transition px-6 py-3 rounded-lg">Create Agent</button>
+    <button class="border border-white/20 hover:border-orange-500 transition px-6 py-3 rounded-lg">Watch Demo</button>
+  </div>
+  <div class="flex flex-wrap justify-center items-center gap-8 mt-6 text-white/80">
+    <div class="flex items-center gap-2 text-lg font-semibold"><i class="fa-brands fa-microsoft text-2xl"></i> Microsoft</div>
+    <div class="flex items-center gap-2 text-lg font-semibold"><i class="fa-brands fa-figma text-2xl"></i> Framer</div>
+    <div class="flex items-center gap-2 text-lg font-semibold"><i class="fa-brands fa-instagram text-2xl"></i> Instagram</div>
+    <div class="flex items-center gap-2 text-lg font-semibold"><i class="fa-solid fa-fan text-2xl"></i> Huawei</div>
+    <div class="flex items-center gap-2 text-lg font-semibold"><i class="fa-solid fa-store text-2xl"></i> Walmart</div>
+  </div>
+</section>
+
+<section class="py-16 text-center px-6">
+  <h2 class="text-3xl font-bold mb-10">Agent Features</h2>
+  <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+    <div class="bg-white/5 border border-white/10 rounded-xl p-6 transition hover:-translate-y-2">
+      <i class="fa-solid fa-robot text-4xl text-orange-400 mb-4"></i>
+      <h3 class="text-xl font-semibold mb-2">Autonomous Agents</h3>
+      <p class="text-white/70">Agents that plan, execute & think step-by-step.</p>
     </div>
-  </header>
+    <div class="bg-white/5 border border-white/10 rounded-xl p-6 transition hover:-translate-y-2">
+      <i class="fa-solid fa-brain text-4xl text-orange-400 mb-4"></i>
+      <h3 class="text-xl font-semibold mb-2">Memory & Learning</h3>
+      <p class="text-white/70">Agents retain memory and improve over time.</p>
+    </div>
+    <div class="bg-white/5 border border-white/10 rounded-xl p-6 transition hover:-translate-y-2">
+      <i class="fa-solid fa-bolt text-4xl text-orange-400 mb-4"></i>
+      <h3 class="text-xl font-semibold mb-2">Real-time Execution</h3>
+      <p class="text-white/70">Fast responses with async task processing.</p>
+    </div>
+  </div>
+</section>
 
-  <section id="hero" class="pt-24 pb-32 text-center lg:text-left relative z-10">
-    <div class="max-w-7xl mx-auto px-6 lg:flex lg:items-center lg:gap-12">
-      <div class="lg:w-1/2">
-    
-        <div class="inline-flex items-center gap-2 bg-cyan-500 bg-opacity-20 border border-cyan-500 px-4 py-2 rounded-full mb-6 backdrop-blur-sm">
-          <span class="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></span>
-          <span class="text-sm font-medium text-cyan-300">New Features Released</span>
-        </div>
-        
-        <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-6 text-white">
-          Build Modern SaaS Products That 
-          <span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Scale</span>
-        </h1>
-        <p class="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-          A professional platform designed for teams and products that want speed, clarity, and growth.
-        </p>
-        <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
-          <a href="#" class="px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold rounded-lg hover:from-cyan-600 hover:to-blue-700 transition-all duration-200 shadow-lg hover:shadow-2xl transform hover:-translate-y-1">
-            <i class="fas fa-rocket mr-2"></i>
-            Get Started
-          </a>
-          <a href="#" class="px-8 py-4 border-2 border-cyan-500 text-cyan-400 font-semibold rounded-lg hover:bg-cyan-500 hover:text-white transition-all duration-200 shadow-md">
-            <i class="fas fa-play-circle mr-2"></i>
-            Learn More
-          </a>
-        </div>
-        
-        <!-- Stats -->
-        <div class="mt-12 grid grid-cols-3 gap-6 max-w-lg mx-auto lg:mx-0">
-          <div class="text-center lg:text-left">
-            <div class="text-3xl font-bold text-white">10K+</div>
-            <div class="text-sm text-gray-400">Active Users</div>
-          </div>
-          <div class="text-center lg:text-left">
-            <div class="text-3xl font-bold text-white">99.9%</div>
-            <div class="text-sm text-gray-400">Uptime</div>
-          </div>
-          <div class="text-center lg:text-left">
-            <div class="text-3xl font-bold text-white">4.9★</div>
-            <div class="text-sm text-gray-400">Rating</div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="lg:w-1/2 mt-10 lg:mt-0">
-        <div class="relative">
-          <div class="absolute -inset-4 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-2xl opacity-20 blur-xl"></div>
-          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&q=80"
-               class="relative w-full rounded-2xl shadow-2xl transform transition-transform duration-500 hover:scale-105 border border-gray-700"
-               alt="Dashboard Illustration" />
-        </div>
+<section class="py-16 px-6">
+  <h2 class="text-3xl font-bold text-center mb-4">From idea to autonomous agent quickly and effortlessly.</h2>
+  <p class="text-center text-white/70 mb-16">Empower your business with AI agents that optimize processes and accelerate performance.</p>
+  <div class="max-w-6xl mx-auto space-y-20">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <img src="images/step1.png" class="rounded-2xl w-full" />
+      <div>
+        <span class="text-orange-500 text-5xl font-bold">01</span>
+        <h3 class="text-2xl font-bold mt-4 mb-4">Start with a prompt</h3>
+        <p class="text-white/70 mb-6">Start with a simple prompt describing what you want your agent to do. Our builder interprets your idea and creates the structure for you in seconds</p>
+        <a href="#" class="text-orange-400 hover:underline">Learn More →</a>
       </div>
     </div>
-  </section>
-
-  <section id="features" class="max-w-7xl mx-auto px-6 py-20 relative z-10">
-    <div class="text-center max-w-3xl mx-auto mb-16">
-      <div class="inline-block bg-cyan-500 bg-opacity-20 border border-cyan-500 px-4 py-2 rounded-full text-sm font-semibold text-cyan-300 mb-4">
-        FEATURES
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="order-2 md:order-1">
+        <span class="text-orange-500 text-5xl font-bold">02</span>
+        <h3 class="text-2xl font-bold mt-4 mb-4">Adjust and personalize</h3>
+        <p class="text-white/70 mb-6">Adjust tasks, actions and integrations. Add personality, rules and data sources to make the agent work exactly the way you want.</p>
+        <a href="#" class="text-orange-400 hover:underline">Learn More →</a>
       </div>
-      <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-        Powerful Features for Teams
-      </h2>
-      <p class="text-lg md:text-xl text-gray-300 leading-relaxed">
-        Everything your team needs to build, launch, and manage high‑performing products.
-      </p>
+      <img src="images/step1.png" class="rounded-2xl w-full order-1 md:order-2" />
     </div>
-
-    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-
-      <div class="group relative bg-gradient-to-br from-gray-800 to-gray-900 bg-opacity-80 backdrop-blur-md p-8 rounded-2xl border border-gray-700 hover:border-cyan-500 shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer transform hover:-translate-y-2">
-        <div class="absolute inset-0 bg-gradient-to-br from-cyan-500 to-blue-600 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity duration-300"></div>
-        
-        <div class="relative">
-        
-          <div class="w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
-            <i class="fas fa-rocket text-3xl text-white"></i>
-          </div>
-          
-          <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">
-            Fast Performance
-          </h3>
-          <p class="text-gray-300 leading-relaxed">
-            Optimized for speed to keep your users engaged and satisfied everywhere.
-          </p>
-          
-          <!-- Hover Arrow -->
-          <div class="mt-4 flex items-center text-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <span class="text-sm font-semibold mr-2">Learn more</span>
-            <i class="fas fa-arrow-right"></i>
-          </div>
-        </div>
-      </div>
-
-      <div class="group relative bg-gradient-to-br from-gray-800 to-gray-900 bg-opacity-80 backdrop-blur-md p-8 rounded-2xl border border-gray-700 hover:border-purple-500 shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer transform hover:-translate-y-2">
-        <div class="absolute inset-0 bg-gradient-to-br from-purple-500 to-pink-600 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity duration-300"></div>
-        
-        <div class="relative">
-          <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
-            <i class="fas fa-shield-alt text-3xl text-white"></i>
-          </div>
-          
-          <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">
-            Secure by Design
-          </h3>
-          <p class="text-gray-300 leading-relaxed">
-            Built‑in security features to protect your data and infrastructure.
-          </p>
-          
-          <div class="mt-4 flex items-center text-purple-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <span class="text-sm font-semibold mr-2">Learn more</span>
-            <i class="fas fa-arrow-right"></i>
-          </div>
-        </div>
-      </div>
-
-      <div class="group relative bg-gradient-to-br from-gray-800 to-gray-900 bg-opacity-80 backdrop-blur-md p-8 rounded-2xl border border-gray-700 hover:border-green-500 shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer transform hover:-translate-y-2">
-        <div class="absolute inset-0 bg-gradient-to-br from-green-500 to-emerald-600 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity duration-300"></div>
-        
-        <div class="relative">
-          <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
-            <i class="fas fa-palette text-3xl text-white"></i>
-          </div>
-          
-          <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-green-400 transition-colors">
-            Easy Customization
-          </h3>
-          <p class="text-gray-300 leading-relaxed">
-            Tailor the platform to your specific workflow, tools, and brand.
-          </p>
-          
-          <div class="mt-4 flex items-center text-green-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <span class="text-sm font-semibold mr-2">Learn more</span>
-            <i class="fas fa-arrow-right"></i>
-          </div>
-        </div>
-      </div>
-
-      <div class="group relative bg-gradient-to-br from-gray-800 to-gray-900 bg-opacity-80 backdrop-blur-md p-8 rounded-2xl border border-gray-700 hover:border-blue-500 shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer transform hover:-translate-y-2">
-        <div class="absolute inset-0 bg-gradient-to-br from-blue-500 to-indigo-600 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity duration-300"></div>
-        
-        <div class="relative">
-          <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
-            <i class="fas fa-chart-line text-3xl text-white"></i>
-          </div>
-          
-          <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
-            Smart Analytics
-          </h3>
-          <p class="text-gray-300 leading-relaxed">
-            Real‑time insights and actionable metrics for smart decisions.
-          </p>
-          
-          <div class="mt-4 flex items-center text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <span class="text-sm font-semibold mr-2">Learn more</span>
-            <i class="fas fa-arrow-right"></i>
-          </div>
-        </div>
-      </div>
-
-      <div class="group relative bg-gradient-to-br from-gray-800 to-gray-900 bg-opacity-80 backdrop-blur-md p-8 rounded-2xl border border-gray-700 hover:border-yellow-500 shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer transform hover:-translate-y-2">
-        <div class="absolute inset-0 bg-gradient-to-br from-yellow-500 to-orange-600 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity duration-300"></div>
-        
-        <div class="relative">
-          <div class="w-16 h-16 bg-gradient-to-br from-yellow-500 to-orange-600 rounded-xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
-            <i class="fas fa-users text-3xl text-white"></i>
-          </div>
-          
-          <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-yellow-400 transition-colors">
-            Team Collaboration
-          </h3>
-          <p class="text-gray-300 leading-relaxed">
-            Coordinate work with tools designed for group workflows.
-          </p>
-          
-          <div class="mt-4 flex items-center text-yellow-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <span class="text-sm font-semibold mr-2">Learn more</span>
-            <i class="fas fa-arrow-right"></i>
-          </div>
-        </div>
-      </div>
-
-      <div class="group relative bg-gradient-to-br from-gray-800 to-gray-900 bg-opacity-80 backdrop-blur-md p-8 rounded-2xl border border-gray-700 hover:border-red-500 shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer transform hover:-translate-y-2">
-        <div class="absolute inset-0 bg-gradient-to-br from-red-500 to-rose-600 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity duration-300"></div>
-        
-        <div class="relative">
-          <div class="w-16 h-16 bg-gradient-to-br from-red-500 to-rose-600 rounded-xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
-            <i class="fas fa-mobile-alt text-3xl text-white"></i>
-          </div>
-          
-          <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-red-400 transition-colors">
-            Fully Responsive
-          </h3>
-          <p class="text-gray-300 leading-relaxed">
-            Works beautifully on any screen size, from phones to desktops.
-          </p>
-          
-          <div class="mt-4 flex items-center text-red-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <span class="text-sm font-semibold mr-2">Learn more</span>
-            <i class="fas fa-arrow-right"></i>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="max-w-7xl mx-auto px-6 py-20 relative z-10">
-    <div class="grid lg:grid-cols-2 gap-12 items-center">
-      
-      <div class="relative order-2 lg:order-1">
-        <div class="absolute -inset-4 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-2xl opacity-20 blur-xl"></div>
-        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80" 
-             alt="Team Working" 
-             class="relative w-full rounded-2xl shadow-2xl border border-gray-700">
-      </div>
-      
-      <div class="order-1 lg:order-2">
-        <div class="inline-block bg-cyan-500 bg-opacity-20 border border-cyan-500 px-4 py-2 rounded-full text-sm font-semibold text-cyan-300 mb-4">
-          WHY CHOOSE US
-        </div>
-        <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
-          Built for Modern Teams
-        </h2>
-        <p class="text-lg text-gray-300 mb-8 leading-relaxed">
-          We understand the challenges teams face. That's why we've built a platform that removes friction and amplifies productivity.
-        </p>
-        
-        <div class="space-y-4">
-          <div class="flex items-start gap-4 bg-gray-800 bg-opacity-50 p-4 rounded-xl backdrop-blur-sm border border-gray-700">
-            <div class="w-10 h-10 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
-              <i class="fas fa-check text-white"></i>
-            </div>
-            <div>
-              <h4 class="text-lg font-semibold text-white mb-1">Seamless Integration</h4>
-              <p class="text-gray-400">Connect with your existing tools in minutes</p>
-            </div>
-          </div>
-          
-          <div class="flex items-start gap-4 bg-gray-800 bg-opacity-50 p-4 rounded-xl backdrop-blur-sm border border-gray-700">
-            <div class="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-600 rounded-lg flex items-center justify-center flex-shrink-0">
-              <i class="fas fa-check text-white"></i>
-            </div>
-            <div>
-              <h4 class="text-lg font-semibold text-white mb-1">24/7 Support</h4>
-              <p class="text-gray-400">Our team is always here to help you succeed</p>
-            </div>
-          </div>
-          
-          <div class="flex items-start gap-4 bg-gray-800 bg-opacity-50 p-4 rounded-xl backdrop-blur-sm border border-gray-700">
-            <div class="w-10 h-10 bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg flex items-center justify-center flex-shrink-0">
-              <i class="fas fa-check text-white"></i>
-            </div>
-            <div>
-              <h4 class="text-lg font-semibold text-white mb-1">Regular Updates</h4>
-              <p class="text-gray-400">New features and improvements every month</p>
-            </div>
-          </div>
-        </div>
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <img src="images/step2.png" class="rounded-2xl w-full" />
+      <div>
+        <span class="text-orange-500 text-5xl font-bold">03</span>
+        <h3 class="text-2xl font-bold mt-4 mb-4">Launch & Automate</h3>
+        <p class="text-white/70 mb-6">Deploy your agent and let it run. It executes tasks autonomously, reports results, and continues working in the background.</p>
+        <a href="#" class="text-orange-400 hover:underline">Learn More →</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="max-w-7xl mx-auto px-6 py-20 relative z-10">
-    <div class="relative bg-gradient-to-r from-cyan-600 via-blue-600 to-purple-600 rounded-3xl p-12 md:p-16 text-center overflow-hidden shadow-2xl">
-    
-      <div class="absolute inset-0 opacity-10">
-        <div class="absolute top-0 left-0 w-full h-full" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
-      </div>
-      
-      <div class="relative z-10">
-        <h2 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6">
-          Ready to Get Started?
-        </h2>
-        <p class="text-xl text-white opacity-90 mb-10 max-w-2xl mx-auto">
-          Join thousands of teams already using Genesis to build better products faster.
-        </p>
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="#" class="w-full sm:w-auto px-10 py-5 bg-white text-blue-600 font-bold rounded-xl hover:bg-gray-100 transition-all duration-200 shadow-xl hover:shadow-2xl transform hover:-translate-y-1">
-            <i class="fas fa-rocket mr-2"></i>
-            Start Free Trial
-          </a>
-          <a href="#" class="w-full sm:w-auto px-10 py-5 bg-transparent border-2 border-white text-white font-bold rounded-xl hover:bg-white hover:text-blue-600 transition-all duration-200">
-            <i class="fas fa-phone mr-2"></i>
-            Contact Sales
-          </a>
-        </div>
-        <p class="text-white text-sm mt-6 opacity-75">
-          <i class="fas fa-credit-card mr-2"></i>
-          No credit card required • 14-day free trial
-        </p>
-      </div>
+<section class="py-16 text-center px-6">
+  <h2 class="text-3xl font-bold mb-10">What Our Users Say</h2>
+  <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+    <div class="bg-white/5 border border-white/10 rounded-xl p-6 transition hover:-translate-y-2">
+      <img src="images/richard's image.jpg" class="mx-auto w-20 h-20 rounded-full mb-4 object-cover border-2 border-orange-400" />
+      <p class="text-white/90 mb-3">"Super clean and easy to use. Saved me hours of dev time!"</p>
+      <p class="text-sm text-white/60">— Richard Nelson</p>
     </div>
-  </section>
+    <div class="bg-white/5 border border-white/10 rounded-xl p-6 transition hover:-translate-y-2">
+      <img src="images/sofia's image.jpg" class="mx-auto w-20 h-20 rounded-full mb-4 object-cover border-2 border-orange-400" />
+      <p class="text-white/90 mb-3">"Top-notch design quality. Perfect balance between simplicity and style."</p>
+      <p class="text-sm text-white/60">— Sophia Martinez</p>
+    </div>
+    <div class="bg-white/5 border border-white/10 rounded-xl p-6 transition hover:-translate-y-2">
+      <img src="images/Ethan's.jpg" class="mx-auto w-20 h-20 rounded-full mb-4 object-cover border-2 border-orange-400" />
+      <p class="text-white/90 mb-3">"Workflow feels 10x faster now with cleaner, consistent components."</p>
+      <p class="text-sm text-white/60">— Ethan Roberts</p>
+    </div>
+    <div class="bg-white/5 border border-white/10 rounded-xl p-6 transition hover:-translate-y-2">
+      <img src="images/isabella's image.jpg" class="mx-auto w-20 h-20 rounded-full mb-4 object-cover border-2 border-orange-400" />
+      <p class="text-white/90 mb-3">"Elegant and efficient. A dream for modern web developers."</p>
+      <p class="text-sm text-white/60">— Isabella Kim</p>
+    </div>
+    <div class="bg-white/5 border border-white/10 rounded-xl p-6 transition hover:-translate-y-2">
+      <img src="images/liam's image.jpg" class="mx-auto w-20 h-20 rounded-full mb-4 object-cover border-2 border-orange-400" />
+      <p class="text-white/90 mb-3">"Tried dozens of UI kits, but this one just feels right."</p>
+      <p class="text-sm text-white/60">— Liam Johnson</p>
+    </div>
+    <div class="bg-white/5 border border-white/10 rounded-xl p-6 transition hover:-translate-y-2">
+      <img src="images/ava's image.jpg" class="mx-auto w-20 h-20 rounded-full mb-4 object-cover border-2 border-orange-400" />
+      <p class="text-white/90 mb-3">"Clean, modern, and super intuitive. Highly recommended."</p>
+      <p class="text-sm text-white/60">— Ava Patel</p>
+    </div>
+  </div>
+</section>
 
-  <footer id="footer" class="bg-black bg-opacity-70 backdrop-blur-md text-gray-300 py-16 relative z-10 border-t border-gray-800">
-    <div class="max-w-7xl mx-auto px-6">
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
-        <div class="lg:col-span-2">
-          <div class="flex items-center gap-2 mb-4">
-            <div class="w-10 h-10 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-lg flex items-center justify-center shadow-lg">
-              <i class="fas fa-bolt text-white text-xl"></i>
-            </div>
-            <h4 class="text-2xl font-bold text-white">Genesis</h4>
-          </div>
-          <p class="text-gray-400 mb-6 leading-relaxed">
-            A modern SaaS platform built for teams who want performance, clarity, and scale. Empowering innovation since 2020.
-          </p>
-          <div class="flex items-center gap-4">
-            <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-cyan-600 rounded-lg flex items-center justify-center transition-colors">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-cyan-600 rounded-lg flex items-center justify-center transition-colors">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-cyan-600 rounded-lg flex items-center justify-center transition-colors">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-cyan-600 rounded-lg flex items-center justify-center transition-colors">
-              <i class="fab fa-facebook"></i>
-            </a>
-          </div>
-        </div>
-        
-        <div>
-          <h5 class="font-bold text-white mb-4">Product</h5>
-          <ul class="space-y-3">
-            <li><a href="#" class="hover:text-cyan-400 transition-colors">Features</a></li>
-            <li><a href="#" class="hover:text-cyan-400 transition-colors">Use Cases</a></li>
-            <li><a href="#" class="hover:text-cyan-400 transition-colors">Pricing</a></li>
-            <li><a href="#" class="hover:text-cyan-400 transition-colors">Enterprise</a></li>
-          </ul>
-        </div>
-        
-        <div>
-          <h5 class="font-bold text-white mb-4">Company</h5>
-          <ul class="space-y-3">
-            <li><a href="#" class="hover:text-cyan-400 transition-colors">About</a></li>
-            <li><a href="#" class="hover:text-cyan-400 transition-colors">Careers</a></li>
-            <li><a href="#" class="hover:text-cyan-400 transition-colors">Blog</a></li>
-            <li><a href="#" class="hover:text-cyan-400 transition-colors">Contact</a></li>
-          </ul>
-        </div>
-        
-        <div>
-          <h5 class="font-bold text-white mb-4">Legal</h5>
-          <ul class="space-y-3">
-            <li><a href="#" class="hover:text-cyan-400 transition-colors">Privacy Policy</a></li>
-            <li><a href="#" class="hover:text-cyan-400 transition-colors">Terms of Service</a></li>
-            <li><a href="#" class="hover:text-cyan-400 transition-colors">Cookie Policy</a></li>
-            <li><a href="#" class="hover:text-cyan-400 transition-colors">Security</a></li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-        <p class="text-gray-500 text-sm">
-          © 2026 Genesis. All rights reserved. Made with <i class="fas fa-heart text-red-500"></i> for amazing teams.
-        </p>
-        <div class="flex items-center gap-6">
-          <a href="#" class="text-gray-500 hover:text-cyan-400 transition-colors text-sm">Privacy</a>
-          <a href="#" class="text-gray-500 hover:text-cyan-400 transition-colors text-sm">Terms</a>
-          <a href="#" class="text-gray-500 hover:text-cyan-400 transition-colors text-sm">Cookies</a>
-        </div>
-      </div>
+<section class="py-16 px-6">
+  <h2 class="text-4xl font-bold text-center mb-4">FAQ's</h2>
+  <p class="text-center text-white/70 mb-12">Looking for answers to your frequently asked questions? Check out our FAQ's section below to find.</p>
+  <div class="max-w-3xl mx-auto space-y-4">
+    <div class="bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 transition">
+      <input type="radio" name="faq" id="faq1" class="hidden peer/faq1">
+      <label for="faq1" class="cursor-pointer flex justify-between items-center text-lg font-semibold">
+        Do I need coding or design experience to use PrebuiltUI?
+        <i class="fa-solid fa-chevron-down peer-checked/faq1:rotate-180 transition"></i>
+      </label>
+      <p class="text-white/70 mt-4 hidden peer-checked/faq1:block">Basic coding knowledge (HTML/CSS, Tailwind) helps, but advanced design skills aren't required. You can use components as-is or customize them.</p>
     </div>
-  </footer>
+    <div class="bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 transition">
+      <input type="radio" name="faq" id="faq2" class="hidden peer/faq2">
+      <label for="faq2" class="cursor-pointer flex justify-between items-center text-lg font-semibold">
+        What is PrebuiltUI and how does it help developers and designers?
+        <i class="fa-solid fa-chevron-down peer-checked/faq2:rotate-180 transition"></i>
+      </label>
+      <p class="text-white/70 mt-4 hidden peer-checked/faq2:block">PrebuiltUI is a collection of ready-to-use components built with Tailwind CSS that help developers build faster and more efficiently.</p>
+    </div>
+    <div class="bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 transition">
+      <input type="radio" name="faq" id="faq3" class="hidden peer/faq3">
+      <label for="faq3" class="cursor-pointer flex justify-between items-center text-lg font-semibold">
+        Can I use PrebuiltUI components in my existing project?
+        <i class="fa-solid fa-chevron-down peer-checked/faq3:rotate-180 transition"></i>
+      </label>
+      <p class="text-white/70 mt-4 hidden peer-checked/faq3:block">Yes! PrebuiltUI components are designed to integrate seamlessly into any existing Tailwind CSS project.</p>
+    </div>
+    <div class="bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 transition">
+      <input type="radio" name="faq" id="faq4" class="hidden peer/faq4">
+      <label for="faq4" class="cursor-pointer flex justify-between items-center text-lg font-semibold">
+        How customizable are the generated components?
+        <i class="fa-solid fa-chevron-down peer-checked/faq4:rotate-180 transition"></i>
+      </label>
+      <p class="text-white/70 mt-4 hidden peer-checked/faq4:block">Components are highly customizable with Tailwind utility classes, theming, and structural adjustments.</p>
+    </div>
+    <div class="bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 transition">
+      <input type="radio" name="faq" id="faq5" class="hidden peer/faq5">
+      <label for="faq5" class="cursor-pointer flex justify-between items-center text-lg font-semibold">
+        Does PrebuiltUI support team collaboration?
+        <i class="fa-solid fa-chevron-down peer-checked/faq5:rotate-180 transition"></i>
+      </label>
+      <p class="text-white/70 mt-4 hidden peer-checked/faq5:block">Yes, our Professional and Enterprise plans include team collaboration features and shared component libraries.</p>
+    </div>
+  </div>
+</section>
+
+<section class="py-16 px-6">
+  <h2 class="text-4xl font-bold text-center mb-4">Our Pricing Plans</h2>
+  <p class="text-center text-white/70 mb-12">A visual collection of our most recent works - each piece crafted with intention, emotion and style.</p>
+  <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+    <div class="bg-gradient-to-br from-purple-800/30 to-gray-800/30 border border-white/10 rounded-2xl p-8 transition hover:-translate-y-2">
+      <span class="text-sm bg-white/10 px-3 py-1 rounded-full inline-block mb-6">🚀 Starter</span>
+      <h3 class="text-4xl font-bold mb-2">$19 <span class="text-lg font-normal text-white/60">/month</span></h3>
+      <p class="text-white/70 mb-8">For individuals and small teams</p>
+      <button class="w-full bg-white/10 hover:bg-white/20 transition py-3 rounded-lg mb-8">Get Started</button>
+      <ul class="space-y-3 text-sm">
+        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-green-400 mt-1"></i> Up to 10 projects</li>
+        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-green-400 mt-1"></i> 10 AI tasks/month</li>
+        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-green-400 mt-1"></i> Basic text generation</li>
+        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-green-400 mt-1"></i> Simple chatbot access</li>
+        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-green-400 mt-1"></i> Email support only</li>
+        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-green-400 mt-1"></i> Community resources</li>
+      </ul>
+    </div>
+    <div class="bg-gradient-to-br from-orange-600/40 to-orange-800/40 border-2 border-orange-500 rounded-2xl p-8 transition hover:-translate-y-2">
+      <span class="text-sm bg-white/20 px-3 py-1 rounded-full inline-block mb-6">⚡ Professional</span>
+      <h3 class="text-4xl font-bold mb-2">$49 <span class="text-lg font-normal text-white/60">/month</span></h3>
+      <p class="text-white/70 mb-8">For growing teams and startups</p>
+      <button class="w-full bg-white text-orange-600 hover:bg-white/90 transition py-3 rounded-lg mb-8 font-semibold">Upgrade Now</button>
+      <ul class="space-y-3 text-sm">
+        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-green-400 mt-1"></i> Unlimited AI tasks</li>
+        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-green-400 mt-1"></i> API integration</li>
+        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-green-400 mt-1"></i> Text & image outputs</li>
+        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-green-400 mt-1"></i> Priority chat & email support</li>
+        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-green-400 mt-1"></i> Detailed analytics</li>
+        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-green-400 mt-1"></i> Team collaboration</li>
+      </ul>
+    </div>
+    <div class="bg-gradient-to-br from-gray-800/30 to-gray-900/30 border border-white/10 rounded-2xl p-8 transition hover:-translate-y-2">
+      <span class="text-sm bg-white/10 px-3 py-1 rounded-full inline-block mb-6">👑 Enterprise</span>
+      <h3 class="text-4xl font-bold mb-2">$149 <span class="text-lg font-normal text-white/60">/month</span></h3>
+      <p class="text-white/70 mb-8">For enterprises and agencies</p>
+      <button class="w-full bg-white/10 hover:bg-white/20 transition py-3 rounded-lg mb-8">Contact Sales</button>
+      <ul class="space-y-3 text-sm">
+        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-green-400 mt-1"></i> Custom AI models</li>
+        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-green-400 mt-1"></i> Team access control</li>
+        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-green-400 mt-1"></i> Dedicated account manager</li>
+        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-green-400 mt-1"></i> Secure private API</li>
+        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-green-400 mt-1"></i> SLA uptime guarantee</li>
+        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-green-400 mt-1"></i> 24/7 premium support</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="py-16 px-6">
+  <div class="max-w-4xl mx-auto">
+    <div class="bg-gradient-to-br from-purple-800/50 via-gray-800/50 to-orange-800/50 backdrop-blur border border-white/10 rounded-3xl p-12 text-center">
+      <h3 class="text-4xl font-bold mb-4">Ready to build?</h3>
+      <p class="text-white/70 mb-8">See how fast you can turn your ideas into reality. Get started for free, no credit card required.</p>
+      <button class="bg-transparent border-2 border-orange-500 hover:bg-orange-500 transition px-8 py-3 rounded-full text-white">Try now →</button>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-gradient-to-br from-purple-900 via-gray-900 to-orange-900 border-t border-white/10 py-12">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="flex justify-center items-center gap-3 mb-8">
+      <div class="bg-orange-500 rounded-full w-10 h-10 flex items-center justify-center">
+        <span class="text-white font-bold text-xl">g</span>
+      </div>
+      <span class="text-white font-bold text-2xl">Genesis</span>
+    </div>
+    <ul class="flex justify-center gap-8 text-sm mb-8">
+      <li class="hover:text-orange-400 cursor-pointer">Terms of Service</li>
+      <li class="hover:text-orange-400 cursor-pointer">Privacy Policy</li>
+      <li class="hover:text-orange-400 cursor-pointer">Security</li>
+      <li class="hover:text-orange-400 cursor-pointer">Sitemap</li>
+    </ul>
+    <div class="flex justify-center gap-6 mb-8">
+      <i class="fa-brands fa-dribbble text-2xl hover:text-orange-400 cursor-pointer"></i>
+      <i class="fa-brands fa-linkedin text-2xl hover:text-orange-400 cursor-pointer"></i>
+      <i class="fa-brands fa-twitter text-2xl hover:text-orange-400 cursor-pointer"></i>
+      <i class="fa-brands fa-github text-2xl hover:text-orange-400 cursor-pointer"></i>
+    </div>
+    <div class="border-t border-white/10 mb-6"></div>
+    <div class="flex flex-col md:flex-row justify-between items-center text-sm text-white/60">
+      <p>Build Ai agents for free</p>
+      <p>Copyright © 2025 PrebuiltUI. All rights reservered. Distributed by ThemeWagon</p>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
